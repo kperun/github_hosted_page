@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 175%;
+}
+
+.row {
+    width: 100%;
+    position: absolute;
+}
+
+.box {
+    background-color: lightgray;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-top: 20px;
+    color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+}
+
+.heading {
+    position: relative;
+    float: right;
+    border: 1px solid black;
+    top: -1px;
+    right: -1px;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+    font-size: 125%;
+}
+
+.heading1 {
+    background-color: palevioletred;
+}
+
+.heading2 {
+    background-color: rgb(255, 182, 47);
+}
+
+.heading3 {
+    background-color: rgb(155, 248, 34);
+}
+
+
+/* Media Quary Part */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+
+    .col-md-12 {
+        float: left;
+        width: 100%;
+    }
+
+    .col-md-12>.box {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sd-12 {
+        float: left;
+        width: 100%;
+    }
+}
