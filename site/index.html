@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Main Page</title>
+    </head>
+    <!-- element selector: li (each element of this type) 
+    - class selector: .name (specifies a class), has to use class="..." in actual html element
+    - id selector: #name (specifies for which IDs to change), has to use id="..." in actual html
+    -->
+    <style>
+        li {
+            color:blue;
+            width: 200px;
+        }
+
+        .red_text{
+            color: red;
+        }
+    </style>
+<body>
+    <header>
+        This is the header which contains information about the page.
+        <nav>
+            Some navigation place...
+        </nav>
+    </header>
+    <h1>This page is about...</h1>
+
+    <section>
+        <article>Topic one
+            <div>
+                A list:
+                <div>
+                    <ul><!-- unordnered List-->
+                        <li>Element 1 </li>
+                        <li>Element 2
+                            <ul>
+                                <li>Sublist 1</li>
+                                <li>Sublist 2</li>
+                                <li>Less than &lt;</li>
+                                <li>Greater &gt;</li>
+                                <li>And &amp;</li>
+                                <li>Copyright:&copy;</li>
+                                <li>Non-breaking space:&nbsp;</li>
+                                <li>Quote:&quot;</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ol><!-- ordered list-->
+                        <li>Ordered Element 1</li>
+                        <li>Ordered Element 2</li>
+                    </ol>
+                </div>
+            </div>
+
+
+
+        </article>
+
+
+        <article>Topic two</article>
+    </section>
+
+    <h2>Start of responsive part</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4" style="width:300px; background-color:red;">Col-1</div>
+            <div class="col-md-4" style="width:300px; background-color:green;">Col-2</div>
+            <div class="col-md-4" style="width:300px; background-color:blue;">Col-3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4" style="width:300px; background-color:red;">Col-1</div>
+            <div class="col-md-4" style="width:300px; background-color:green;">Col-2</div>
+            <div class="col-md-4" style="width:300px; background-color:blue;">Col-3</div>
+        </div>
+    </div>
+
+
+    <section>
+        <ul>
+            <li><a class="red_text" href="lorum_ipsum.html#par1">par 1</a></li>
+            <li><a href="lorum_ipsum.html#par2">par 2</a></li>
+            <li><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Google_Chrome_icon_%282011%29.svg" width="300px" alt="Chrome Icon">
+            By setting width and hight we reserve space on the page, avoid jumping. Even if the image does not lode, the spacing will remain.</li>
+        </ul>
+        
+    </section>
+    <p>Uff</p>
+    <aside>
+        Not directly related to the content, but still relevant
+    </aside>
+
+    <footer>
+        <a href="sub_page.html" title="Sub Page">Internal Link to subpage</a>
+        <a href="https://www.github.com" target="_blank" title="GitHub"><div>External Link to github</div></a>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
